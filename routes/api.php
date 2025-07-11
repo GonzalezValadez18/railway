@@ -15,5 +15,10 @@ Route::put('/students/{id}', [studentController::class, 'update']);
 
 Route::patch('/students/{id}', [studentController::class, 'updatePartial']);
 
+Route::get('/ping', function () {
+    return response('pong', 200);
+});
+
+
 
 
